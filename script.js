@@ -52,6 +52,9 @@ const colors = [
   "#710ac8",
 ];
 
+const captainColor = "#ffff00";
+const viceCaptainColor = "#ffc0cb";
+
 document.getElementById("csvFile").addEventListener("change", function (e) {
   const file = e.target.files[0];
   if (!file) return;
@@ -131,7 +134,6 @@ function createStyledTable(playerName, playerTeams, rows) {
   for (let row = 0; row < rows; row++) {
     const tr = document.createElement("tr");
     tr.classList.add("team-row");
-    tr.style.backgroundColor = "#d2d2d2";
     playerTeams[row].teams.forEach((team) => {
       const td = document.createElement("td");
       td.textContent = `${team.name}`;
@@ -179,3 +181,7 @@ function generateTeams(text) {
   });
   return teamByName;
 }
+
+// Set Legends colod
+document.getElementById('captainColor').style.backgroundColor = captainColor;
+document.getElementById('viceCaptainColor').style.backgroundColor = viceCaptainColor;
