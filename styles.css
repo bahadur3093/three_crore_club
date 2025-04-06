@@ -1,0 +1,50 @@
+body {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.file_upload {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    margin-bottom: 20px;
+}
+
+.file_upload_wrapper {
+    flex: 1;
+}
+
+.legends {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+}
+
+.legends_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.legends_wrapper:first-child {
+    margin-right: 10px;
+}
+
+.legend_icon {
+    width: 2rem;
+    height: 1rem;
+    background-color: red;
+    margin-left: 5px;
+    border: 1px solid #000000;
+}
